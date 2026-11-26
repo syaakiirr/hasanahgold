@@ -2,13 +2,14 @@
 :root {
   --paper: #ffffff;
   --surface: #f4f4f4;
-  --blush: #f5e8ec;
+  --blush: #faeef2;
   --ink: #171717;
   --muted: #6c6c6c;
-  --brand: #86164f;
-  --accent: #ad226b;
-  --gold: #a47c32;
-  --metal-text: #94703b;
+  --brand: #b5385c;
+  --brand-hover: #922847;
+  --accent: #d95377;
+  --gold: #c9972c;
+  --metal-text: #9e721a;
   --border: #e3e3e3;
   --on-brand: #fff8f5;
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -33,10 +34,10 @@
   --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
   --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);
-  --gold-shadow: #9f7620;
-  --gold-light: #e5c45d;
-  --gold-highlight: #fff0b3;
-  --halo-color: #c0267824;
-  --clear: #c0267800;
+  --gold-shadow: #9b6c16;
+  --gold-light: #ebc153;
+  --gold-highlight: #fff0b8;
+  --halo-color: #d9537728;
+  --clear: #d9537700;
   --nav-shadow: #2923290c;
 }

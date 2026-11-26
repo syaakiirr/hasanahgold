@@ -15,7 +15,7 @@ export default function SiteFooter() {
   return (
     <DoodleCrewFooter
       wordmark="HASANAH"
-      brand="syaakiirr"
+      brand="Hasanah Gold"
       preset="paper"
       blurb="Hasanah Gold, Kuala Terengganu. Barang kemas emas untuk dipakai, diberi dan dikenang."
       tagline="Hasanah Gold — kedai emas di Kuala Terengganu."

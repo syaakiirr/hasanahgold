@@ -8,14 +8,14 @@ import CollectionPage from './components/CollectionPage';
 import AboutPage from './components/AboutPage';
 
 export default function App({ path = typeof window === 'undefined' ? '/' : window.location.pathname }: { path?: string }) {
-  usePageMotion();
+  usePageMotion(path);
   const isCatalogue = path.replace(/\/$/, '') === '/katalog';
   const isCollection = path.replace(/\/$/, '') === '/koleksi';
   const isAbout = path.replace(/\/$/, '') === '/tentang';
   return <>
     <a className="skip-link" href="#main">Langkau ke kandungan</a>
     <Navbar />
-    <main id="main">
+    <main id="main" key={path} className="page-transition">
       {isCollection ? <CollectionPage /> : isCatalogue ? <CataloguePage /> : isAbout ? <AboutPage /> : <EditorialHome />}
     </main>
     <SiteFooter />

@@ -1,45 +1,58 @@
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { business, mapsUrl } from '../data/business';
 import WhatsAppLink from './WhatsAppLink';
 import '../styles/collection.css';
 
 export default function AboutPage() {
   return <div className="collection-page about-page">
-    <header className="collection-heading container">
-      <div className="collection-topline"><a href="/"><ArrowLeft size={14} /> Utama</a><span>HASANAH GOLD / TENTANG KAMI</span><span>KUALA TERENGGANU</span></div>
-      <p className="eyebrow">Lot 11-A &amp; 12-A, Dataran Panji, Jalan Panji Alam</p>
-      <h1>Tentang <em>Hasanah Gold.</em></h1>
-      <div className="about-heading-rule" aria-hidden="true" />
-    </header>
-    <section className="about-intro container" aria-label="Pengenalan Hasanah Gold">
-      <div className="about-story">
-        <p className="about-lead">Hasanah Gold beroperasi di Dataran Panji, Kuala Terengganu, menawarkan barang kemas emas untuk dipakai harian mahupun majlis istimewa, termasuk cincin, gelang, bangle, rantai, loket, subang dan gelang kaki.</p>
-        <p>Semua koleksi dipamerkan terus di kedai supaya anda boleh melihat dan mencuba saiznya sendiri. Jika ingin semak stok, berat atau harga terlebih dahulu, mesej sahaja kami di WhatsApp sebelum singgah.</p>
+    <header className="about-header container">
+      <div className="collection-topline">
+        <a href="/"><ArrowLeft size={14} /> Utama</a>
+        <span>HASANAH GOLD / TENTANG KAMI</span>
+        <span>KUALA TERENGGANU</span>
       </div>
-      <dl className="about-highlights">
-        <div><dt>Koleksi Kedai</dt><dd>Cincin, gelang, bangle, rantai, loket, subang &amp; gelang kaki.</dd></div>
-        <div><dt>Cuba Terus</dt><dd>Lihat berat, ketulenan dan keselesaan saiz di kaunter kami.</dd></div>
-        <div><dt>Semak Dahulu</dt><dd>Tanya stok &amp; harga terkini di WhatsApp sebelum datang.</dd></div>
-      </dl>
-    </section>
-    <section className="collection-visit container about-location">
-      <a className="collection-editorial-photo about-map" href={mapsUrl} target="_blank" rel="noopener noreferrer">
-        <img src="/images/location/location-hasanah-gold.png" alt="Peta lokasi Hasanah Gold di Dataran Panji, Jalan Panji Alam, Kuala Terengganu" width="1209" height="832" loading="lazy" />
-        <span>TEKAN UNTUK BUKA GOOGLE MAPS</span>
+      <div className="about-title-row" data-reveal>
+        <div>
+          <p className="eyebrow">Panji Curve · Kuala Terengganu</p>
+          <h1><span data-text-reveal>Tentang <em>Hasanah Gold.</em></span></h1>
+        </div>
+      </div>
+    </header>
+
+    <section className="about-card container" aria-label="Maklumat butik Hasanah Gold">
+      <a className="about-map-panel" data-reveal href={mapsUrl} target="_blank" rel="noopener noreferrer">
+        <img
+          src="/images/location/location-hasanah-gold.png"
+          alt="Peta lokasi Hasanah Gold di Panji Curve, Jalan Panji Alam, Kuala Terengganu"
+          width="1209"
+          height="832"
+          loading="lazy"
+        />
+        <span className="about-map-pill">Buka Google Maps <ArrowUpRight size={13} /></span>
       </a>
-      <div className="collection-visit-copy">
-        <p className="eyebrow">Lokasi kedai</p>
-        <h2>Singgah ke <em>kedai kami.</em></h2>
-        <address>{business.address}</address>
-        <ul className="about-details">
-          <li><span>Telefon</span><a href={`tel:${business.telephone}`}>{business.phone}</a></li>
-          <li><span>Emel</span><a href={`mailto:${business.email}`}>{business.email}</a></li>
-          <li><span>Instagram</span><a href={business.socials.instagram ?? undefined} target="_blank" rel="noopener noreferrer">hasanahgold78</a></li>
-          <li><span>TikTok</span><a href={business.socials.tiktok ?? undefined} target="_blank" rel="noopener noreferrer">@hasanahgold78</a></li>
-        </ul>
+
+      <div className="about-info-panel" data-reveal>
+        <p className="eyebrow">Butik kami</p>
+        <h2><span data-text-reveal>Singgah &amp; <em>cuba sendiri.</em></span></h2>
+        <address className="about-address">{business.address}</address>
+
+        <dl className="about-details">
+          <div><dt>Koleksi</dt><dd>Emas 916 · Cincin, Gelang, Rantai, Loket, Subang</dd></div>
+          <div><dt>Telefon</dt><dd><a href={`tel:${business.telephone}`}>{business.phone}</a></dd></div>
+          <div><dt>Emel</dt><dd><a href={`mailto:${business.email}`}>{business.email}</a></dd></div>
+          <div>
+            <dt>Sosial</dt>
+            <dd className="about-socials">
+              <a href={business.socials.instagram ?? undefined} target="_blank" rel="noopener noreferrer">Instagram</a>
+              <span aria-hidden="true">·</span>
+              <a href={business.socials.tiktok ?? undefined} target="_blank" rel="noopener noreferrer">TikTok</a>
+            </dd>
+          </div>
+        </dl>
+
         <div className="about-actions">
-          <WhatsAppLink className="button about-whatsapp">Tanya di WhatsApp</WhatsAppLink>
-          <a className="about-maps" href={mapsUrl} target="_blank" rel="noopener noreferrer">Buka Google Maps</a>
+          <WhatsAppLink className="about-btn-primary">Tanya di WhatsApp</WhatsAppLink>
+          <a className="about-btn-secondary" href={mapsUrl} target="_blank" rel="noopener noreferrer">Arah ke kedai</a>
         </div>
       </div>
     </section>

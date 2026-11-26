@@ -1,6 +1,86 @@
-@keyframes caption-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.button,.main-nav a,.text-link { transition: color 250ms,background-color 250ms,border-color 250ms; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation: none !important; transition-duration: 0s !important; scroll-behavior: auto !important; } }
-html:not(.js) .hero-pagination,html:not(.js) .hero-pause { display: none; }
+@view-transition {
+  navigation: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes caption-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes pdp-enter {
+  from { opacity: 0; transform: scale(0.98) translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+.page-transition {
+  animation: page-enter 560ms var(--ease-luxury) both;
+}
+
+.farline-lightbox[open] .farline-pdp {
+  animation: pdp-enter 380ms var(--ease-luxury) both;
+}
+
+.button,
+.main-nav a,
+.text-link,
+.ed-button,
+.ed-text-link,
+.about-btn-primary,
+.about-btn-secondary,
+.floating-whatsapp {
+  transition:
+    color 240ms var(--ease-luxury),
+    background-color 240ms var(--ease-luxury),
+    border-color 240ms var(--ease-luxury),
+    transform 240ms var(--ease-luxury),
+    box-shadow 240ms var(--ease-luxury);
+}
+
+.button:active,
+.ed-button:active,
+.about-btn-primary:active,
+.about-btn-secondary:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.brand img {
+  transition: transform 350ms var(--ease-luxury), box-shadow 350ms var(--ease-luxury);
+}
+
+.brand:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px -2px #b5385c52;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -4px #b5385c48;
+}
+
+.ed-faq-list details[open] > p {
+  animation: caption-in 320ms var(--ease-luxury) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html:not(.js) .hero-pagination, html:not(.js) .hero-pause { display: none; }
 html:not(.js) .main-nav { position: static; visibility: visible; opacity: 1; transform: none; flex-direction: row; flex-wrap: wrap; border: 0; padding: 8px 0; }
-html:not(.js) .site-header { position: static; height: auto; }html:not(.js) .header-inner { flex-wrap: wrap; }html:not(.js) .menu-toggle,html:not(.js) .search-toggle { display: none; }
+html:not(.js) .site-header { position: static; height: auto; }
+html:not(.js) .header-inner { flex-wrap: wrap; }
+html:not(.js) .menu-toggle, html:not(.js) .search-toggle { display: none; }

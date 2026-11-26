@@ -4,7 +4,15 @@ import { business, navigation, navigationHref } from '../data/business';
 import { jewellery as collections } from '../data/jewellery';
 
 export function Brand() {
-  return <a className="brand" href="/#home" aria-label={`${business.name}, utama`}><img src="/images/logo/hasanah-gold.svg" width="268" height="88" alt={business.name} /></a>;
+  return (
+    <a className="brand" href="/#home" aria-label={`${business.name}, utama`}>
+      <img src="/images/logo/hasanah-gold-logo.jpg" width="46" height="46" alt={business.name} />
+      <span className="brand-wordmark">
+        <strong>Hasanah</strong>
+        <small>GOLD</small>
+      </span>
+    </a>
+  );
 }
 
 export default function Navbar() {

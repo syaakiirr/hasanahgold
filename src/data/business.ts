@@ -1,7 +1,7 @@
 export const business = {
   name: 'Hasanah Gold',
   tagline: 'Keindahan Emas, Keanggunan Anda.',
-  address: 'Lot 11-A & 12-A, Dataran Panji, Jalan Panji Alam, 21100 Kuala Terengganu, Terengganu, Malaysia',
+  address: 'Lot 11-A & 12-A, Panji Curve, Jalan Panji Alam, 21100 Kuala Terengganu, Terengganu, Malaysia',
   phone: '019-9089888',
   telephone: '+60199089888',
   whatsapp: '60199089888',
@@ -14,10 +14,12 @@ export const business = {
   },
 };
 
-export function whatsappUrl(subject?: string) {
-  const message = subject
-    ? `Hai Hasanah Gold, saya berminat dengan ${subject} selepas melihat gambar inspirasi di laman web. Boleh kongsikan gambar dan maklumat koleksi yang ada di kedai?`
-    : business.generalMessage;
+export function whatsappUrl(subject?: string, code?: string) {
+  const message = code
+    ? `Assalam Hasanah Gold, saya nak bertanya tentang produk ${code}${subject ? ` (${subject})` : ''}. Boleh kongsikan maklumat lanjut?`
+    : subject
+      ? `Hai Hasanah Gold, saya berminat dengan ${subject} selepas melihat gambar inspirasi di laman web. Boleh kongsikan gambar dan maklumat koleksi yang ada di kedai?`
+      : business.generalMessage;
   return `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 

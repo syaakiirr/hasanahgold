@@ -17,12 +17,12 @@ export default function EditorialHome() {
   return <><div className="editorial-home">
     <section id="home" className="ed-hero ed-container" aria-labelledby="ed-hero-title">
       <div className="ed-hero-copy">
-        <p className="ed-overline">HASANAH GOLD · KUALA TERENGGANU</p>
+        <p className="ed-overline" data-reveal>HASANAH GOLD · KUALA TERENGGANU</p>
         <h1 id="ed-hero-title"><span data-text-reveal>Untuk dipakai.</span><span data-text-reveal>Untuk dikenang.</span></h1>
-        <p className="ed-hero-description">Cincin, gelang, rantai dan subang untuk dipakai harian atau hari istimewa. Tanya stok di WhatsApp, atau datang terus ke kedai untuk mencuba.</p>
-        <div className="ed-hero-actions"><a className="ed-button" href="/koleksi/">Lihat koleksi</a><WhatsAppLink className="ed-text-link">Tanya kami</WhatsAppLink></div>
+        <p className="ed-hero-description" data-reveal>Cincin, gelang, rantai dan subang untuk dipakai harian atau hari istimewa. Tanya stok di WhatsApp, atau datang terus ke kedai untuk mencuba.</p>
+        <div className="ed-hero-actions" data-reveal><a className="ed-button" href="/koleksi/">Lihat koleksi</a><WhatsAppLink className="ed-text-link">Tanya kami</WhatsAppLink></div>
       </div>
-      <div className="ed-hero-art">
+      <div className="ed-hero-art" data-reveal>
         <div className="ed-hero-portrait"><JewelleryImage src="/images/editorial/hero-worn-gold.webp" alt="Visual editorial wanita berhijab memakai bangle, gelang dan cincin emas" priority /></div>
         <a className="ed-hero-inset" href="/koleksi/#rings"><div><JewelleryImage src="/images/collection/rings.webp" alt="Rekaan cincin emas berjalin dengan tepi berukir" /></div><span>Cincin Emas</span></a>
         <span className="ed-art-caption">THE GOLD EDIT — HASANAH</span>

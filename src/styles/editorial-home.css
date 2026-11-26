@@ -5,7 +5,7 @@
 .editorial-home h2 { font-size: clamp(30px,3.2vw,46px); line-height: 1.02; }
 .ed-overline { font-family: var(--font-body); font-size: 10px; line-height: 1.6; letter-spacing: .13em; text-transform: uppercase; }
 .ed-button { display: inline-flex; min-height: 50px; padding: 14px 23px; justify-content: center; align-items: center; gap: 28px; font-size: 12px; background: var(--brand); color: white; border: 1px solid var(--brand); transition: background 200ms; }
-.ed-button:hover { background: #6d1040; }.ed-text-link { display: inline-flex; align-items: center; gap: 16px; padding-block: 12px; min-height: 44px; font-size: 12px; border-bottom: 1px solid #ac9a80; }.ed-text-link:hover { color: var(--brand); border-color: var(--brand); }
+.ed-button:hover { background: var(--brand-hover); }.ed-text-link { display: inline-flex; align-items: center; gap: 16px; padding-block: 12px; min-height: 44px; font-size: 12px; border-bottom: 1px solid #ac9a80; }.ed-text-link:hover { color: var(--brand); border-color: var(--brand); }
 .ed-hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; padding-top: 54px; padding-bottom: 84px; }
 .ed-hero-copy { padding-bottom: 20px; }.ed-hero-copy > .ed-overline { display: flex; align-items: center; gap: 12px; }
 .ed-hero h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(46px,4.9vw,74px); line-height: 1.06; letter-spacing: -.015em; margin: 28px 0; white-space: nowrap; }
