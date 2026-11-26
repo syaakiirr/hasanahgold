@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "historyId": "f1063096-3b51-4c02-af82-da6679494aa0",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "gsap.min.js": {
+      "hash": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "content": "C:\\Users\\syakir\\.cache\\hyperframes\\history\\f1063096-3b51-4c02-af82-da6679494aa0\\blobs\\92\\92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    "index.html": {
+      "hash": "e247addb13107762bbbba597ad86717dd4a3d461170e29bf190809fb5125f4de",
+      "content": "C:\\Users\\syakir\\.cache\\hyperframes\\history\\f1063096-3b51-4c02-af82-da6679494aa0\\blobs\\e2\\e247addb13107762bbbba597ad86717dd4a3d461170e29bf190809fb5125f4de"
+    },
+    "keyframe.png": {
+      "hash": "685ed8218d594da24ee79ebb3bad05db035a8cec96176ad19cd713dc3e9e819f",
+      "content": "C:\\Users\\syakir\\.cache\\hyperframes\\history\\f1063096-3b51-4c02-af82-da6679494aa0\\blobs\\68\\685ed8218d594da24ee79ebb3bad05db035a8cec96176ad19cd713dc3e9e819f"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "48af3883-ab8d-43ae-8cfb-10ce062aaa32",
+      "completedAt": 1794813330106,
+      "output": "C:\\Users\\syakir\\Downloads\\syaakiirr\\HS Gold\\public\\videos\\hasanah-gold-brand-film.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

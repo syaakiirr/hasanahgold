@@ -1,0 +1,42 @@
+/* Hasanah Gold: shared brand, layout and motion tokens. Logo colours retained. */
+:root {
+  --paper: #ffffff;
+  --surface: #f4f4f4;
+  --blush: #f5e8ec;
+  --ink: #171717;
+  --muted: #6c6c6c;
+  --brand: #86164f;
+  --accent: #ad226b;
+  --gold: #a47c32;
+  --metal-text: #94703b;
+  --border: #e3e3e3;
+  --on-brand: #fff8f5;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --section-space: clamp(4rem, 8vw, 8rem);
+  --gutter: 40px;
+  --motion-instant: 120ms;
+  --motion-fast: 220ms;
+  --motion-normal: 450ms;
+  --motion-slow: 750ms;
+  --motion-cinematic: 1100ms;
+  --motion-dramatic: 1500ms;
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);
+  --gold-shadow: #9f7620;
+  --gold-light: #e5c45d;
+  --gold-highlight: #fff0b3;
+  --halo-color: #c0267824;
+  --clear: #c0267800;
+  --nav-shadow: #2923290c;
+}

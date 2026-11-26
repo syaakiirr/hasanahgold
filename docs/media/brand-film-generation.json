@@ -1,0 +1,19 @@
+{
+  "status": "blocked_before_submission",
+  "reason": "fal_balance_exhausted",
+  "endpoint_id": "bytedance/seedance-2.5/us/text-to-video",
+  "decision_id": "dac40d49-b021-461a-8d7a-77fb545eff95",
+  "submission_key": "hs-gold-brand-film-20261116-6ad5d782",
+  "input": {
+    "prompt": "A single continuous 8-second luxury jewellery editorial macro film, photorealistic, for a sophisticated Malaysian gold jewellery boutique website. On dark espresso-brown satin with gentle sculptural folds rests an elegant polished yellow-gold oval-link bracelet across the lower third, with a fine gold band and two small hoop earrings to the right. Stable physically correct jewellery shapes throughout. The camera makes a very slow smooth lateral macro dolly while a large warm softbox reflection glides delicately across the polished gold, revealing meticulous metal texture and realistic highlights. Subtle natural fabric movement only. Calm, refined, cinematic warm gold against rich dark brown, shallow depth of field, professional product cinematography. Keep the central upper area dark and uncluttered for a website headline to be added separately. Begin and end with nearly identical framing and illumination so it can loop gracefully. No cuts, no montage, no zoom jumps, no people, no hands, no text, no captions, no logos, no watermarks, no particles, no floating objects, no morphing metal. Silent.",
+    "resolution": "1080p",
+    "duration": "8",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "codec": "H264",
+    "bitrate_mode": "standard"
+  },
+  "poster": "public/images/brand-film-poster.webp",
+  "keyframe": "docs/media/brand-film-keyframe.png",
+  "intended_video": "public/videos/hasanah-gold-brand-film.mp4"
+}

@@ -1,0 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '@fontsource/plus-jakarta-sans/latin-400.css';
+import '@fontsource/plus-jakarta-sans/latin-500.css';
+import '@fontsource/plus-jakarta-sans/latin-600.css';
+import '@fontsource/cormorant-garamond/latin-400.css';
+import '@fontsource/cormorant-garamond/latin-500.css';
+import '@fontsource/cormorant-garamond/latin-600.css';
+import '@fontsource/cormorant-garamond/latin-400-italic.css';
+import App from './App';
+import './styles/tokens.css';
+import './styles/globals.css';
+import './styles/motion.css';
+import './styles/visual-components.css';
+
+const root = document.getElementById('root')!;
+document.documentElement.classList.add('js');
+const app = <React.StrictMode><App /></React.StrictMode>;
+if (root.hasChildNodes()) ReactDOM.hydrateRoot(root, app);
+else ReactDOM.createRoot(root).render(app);

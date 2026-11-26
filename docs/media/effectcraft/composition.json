@@ -1,0 +1,62 @@
+[
+  {
+    "command": "comp.new",
+    "params": {
+      "name": "Hasanah - Coastal Editorial",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": 24,
+      "duration": 8,
+      "background": "#83795e"
+    }
+  },
+  {
+    "command": "file.import",
+    "params": {
+      "paths": [
+        "C:\\Users\\syakir\\Downloads\\syaakiirr\\HS Gold\\docs\\media\\effectcraft\\coastal-editorial.png"
+      ],
+      "addToComp": true
+    }
+  },
+  {
+    "command": "layer.rename",
+    "params": {
+      "layer": "#1",
+      "name": "Coastal editorial"
+    }
+  },
+  {
+    "command": "prop.setExpression",
+    "params": {
+      "layer": "#1",
+      "path": "transform/scale",
+      "expression": "var s = 120 + 3 * (1 - Math.cos(time * Math.PI / 4)); [s, s, 100]"
+    }
+  },
+  {
+    "command": "prop.setExpression",
+    "params": {
+      "layer": "#1",
+      "path": "transform/position",
+      "expression": "[960 + 14 * Math.sin(time * Math.PI / 4), 540 + 5 * (1 - Math.cos(time * Math.PI / 4)), 0]"
+    }
+  },
+  {
+    "command": "effect.apply",
+    "params": {
+      "effect": "ec.color.exposure",
+      "layers": [
+        "#1"
+      ]
+    }
+  },
+  {
+    "command": "prop.setExpression",
+    "params": {
+      "layer": "#1",
+      "path": "effects/#1/master/exposure",
+      "expression": "0.04 * (1 - Math.cos(time * Math.PI / 4))"
+    }
+  }
+]

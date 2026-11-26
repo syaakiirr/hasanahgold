@@ -1,0 +1,6 @@
+@keyframes caption-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.button,.main-nav a,.text-link { transition: color 250ms,background-color 250ms,border-color 250ms; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation: none !important; transition-duration: 0s !important; scroll-behavior: auto !important; } }
+html:not(.js) .hero-pagination,html:not(.js) .hero-pause { display: none; }
+html:not(.js) .main-nav { position: static; visibility: visible; opacity: 1; transform: none; flex-direction: row; flex-wrap: wrap; border: 0; padding: 8px 0; }
+html:not(.js) .site-header { position: static; height: auto; }html:not(.js) .header-inner { flex-wrap: wrap; }html:not(.js) .menu-toggle,html:not(.js) .search-toggle { display: none; }
